@@ -11,7 +11,7 @@ const RateReducer = (state = defaultState, action) => {
       return {
         ...state,
         rate: action.payload.data
-          .find(item => item.currency === action.payload.currency.value),
+          .find(({ currency }) => currency === action.payload.currency.value),
         loaded: true
       };
     case LOADING_RATE:

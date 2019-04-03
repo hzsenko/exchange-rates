@@ -18,7 +18,8 @@ const CurrencyReducer = (state = defaultState, action) => {
   switch (action.type) {
     case CHANGE_SELECTED_CURRENCY:
       return {
-        ...state, selectedCurrency: action.payload
+        ...state,
+        selectedCurrency: action.payload
       };
     case FETCH_CURRENCIES_SUCCESS:
       return {

@@ -25,11 +25,9 @@ export const asyncGetCurrencies = () => dispatch => {
     let randomCase = randomInteger(1, 2);
     switch (randomCase) {
       case 1:
-        dispatch(fetchCurrenciesSuccess());
-        break;
+        return dispatch(fetchCurrenciesSuccess());
       case 2:
-        dispatch(fetchCurrenciesFailed());
-        break;
+        return dispatch(fetchCurrenciesFailed());
       default:
         return true
     }

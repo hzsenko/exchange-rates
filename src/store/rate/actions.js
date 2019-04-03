@@ -15,9 +15,7 @@ export const fetchRateSuccess = (currency) => ({
 
 export const asyncGetRate = (currency) => dispatch => {
   dispatch(loadingRate());
-  setTimeout(() => {
-    dispatch(fetchRateSuccess(currency));
-  }, 1000);
+  setTimeout(() => dispatch(fetchRateSuccess(currency)), 1000);
 };
 
 export const loadingRate = () => ({
