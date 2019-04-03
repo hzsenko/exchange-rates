@@ -11,7 +11,7 @@
 Проект создан через cli:
 
 ```sh
-$ create-react-app todo-app
+$ create-react-app exchange-rates
 ```
 
 Запуск:
